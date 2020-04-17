@@ -93,12 +93,32 @@ class SortingRobot:
         return self._light == "ON"
 
     def sort(self):
-        """
-        Sort the robot's list.
-        """
-        # Fill this out
-        pass
+        self.set_light_on()
 
+        while self.light_is_on():
+            self.move_right()
+        if self.compare_item() == 1:
+            self.swap_item()
+            self.move_right()
+        elif self.compare_item() == -1 or 0:
+            self.move_right
+        elif self.can_move_right is None:
+            self.set_light_off()
+       
+            
+
+
+
+            
+
+#PLAN         
+#robot has to be turned on to work
+#bubble sort?
+# while robot is on it can do things
+# move the robot to the right and down the array
+# have the robot compare items as it moves and swap if necessary
+# move left and start over?
+# if all is sorted turn the robot off
 
 if __name__ == "__main__":
     # Test our your implementation from the command line

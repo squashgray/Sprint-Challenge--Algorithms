@@ -18,5 +18,6 @@ def count_th(word):
     
 # must use recursion! no loops 
 # establish base case
-# find ONLY the 'th' in word
+# find ONLY the 'th' in word, case matters must be lower case 
+# check 2 letter and move to the next index
 # setup a counter for each iteration of "th"
